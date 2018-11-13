@@ -1,0 +1,119 @@
+.slideshow {
+  width: 100%;
+  height: 30rem;
+  left: 0;            /* pushes the picture to the left */
+  list-style: none;   /* removes bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: inherit;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url('./../images/florian-pagano-692849-unsplash.jpg');
+}
+.slideshow li:nth-child(2) {
+  background-image: url('./../images/dawid-zawila-118913-unsplash.jpg');
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url('./../images/antonio-molinari-455670-unsplash.jpg');
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url('./../images/julian-villella-708046-unsplash.jpg');
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url('./../images/ralf-leineweber-535331-unsplash.jpg');
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+#switcher{
+  float:right;
+  list-style:none;
+  margin: 0;
+  padding: 0;
+  position:relative;
+  top: -2.5rem;
+}
+
+#switcher li {
+  border-radius: 50%;
+  border: .125rem solid white;
+  display: inline-block;
+  height: 1.2rem;
+  margin: 0 .5rem 1rem 0;
+  width: 1.2rem;
+}
+
+#switcher li:hover a.active {
+  background-color: white;
+  opacity: .5;
+}
+
+#switcher a.active {
+  border-radius: inherit;
+  opacity: 0;
+  cursor: pointer;
+  height: 1rem;
+  position: absolute;
+  width: 1rem;
+  animation: imageAnimation 50s linear infinite;
+}
+
+#switcher li:nth-child(1) a.active {
+  background-color: white;
+}
+
+#switcher li:nth-child(2) a.active {
+  background-color: white;
+  animation-delay: 10s;
+}
+
+#switcher li:nth-child(3) a.active {
+  background-color: white;
+  animation-delay: 20s;
+}
+
+#switcher li:nth-child(4) a.active {
+  background-color: white;
+  animation-delay: 30s;
+}
+
+#switcher li:nth-child(5) a.active {
+  background-color: white;
+  animation-delay: 40s;
+}

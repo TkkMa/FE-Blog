@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  font: 100%;
+  font-family: sans-serif;
+  color: #5D6063;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.container{
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  min-height: calc(100vh - 21.4rem);
+}
+
+.section-title {
+  font-size: 1.3rem;
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-bottom: 0;
+  padding: 4rem 0 2.5rem 5rem;
+}
+
+.section-title h3{
+  margin-top: 1rem;
+}
+.section-title p{
+  color: red;
+  font-size: 1.4rem;
+  display: none;
+}
+
+form{
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  margin: 0 auto;
+  padding: 2rem 5rem 5rem 5rem;
+}
+
+.form-group{
+  margin-bottom: 3rem;
+}
+
+.form-group>textarea{
+  overflow-y: scroll;
+  resize: none;
+  min-height: 20rem;
+}
+
+#tagLabels h3{
+  display: inline;
+  margin: 0 0.2rem;
+}
+
+/* #tagLabels i:hover{
+  background-color: black;
+} */
+.row > .col-sm-12 >button{
+  margin-left: 1rem;
+}
+
+a:link,
+a:visited{
+  color: cornflowerblue;
+  text-decoration: none;
+}
+a:hover{
+  color: #5D6063;
+}
+
+input.error {
+  background-color: tomato;
+}
+
+input.error:focus {
+  border-color: brown;
+}
+
+label.error{
+  color: tomato;
+  font-size: smaller;
+  margin-left: 2%;
+}
+

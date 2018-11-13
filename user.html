@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href='styles/about.css' rel='stylesheet' />
+    <link href='styles/navbar.css' rel='stylesheet' />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class='container-fluid'>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+              <li class="nav-item" id='home'>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id='about'>
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <ul class='navbar-nav navbar-right'>
+              <li class="nav-item" id='login'>
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item" id='signup'>
+                <a class="nav-link" href="./signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class='container'>
+        <div class='row attach-data'>
+          <div class='template-sidebar col-sm-4' style="display:none">
+            <div class='sidebar-picture'>
+              <img src='./images/avatars/camera.jpg' />
+            </div>
+            <div class='sidebar-description'>
+              <p id='date'>Date joined: 29/06/2018</p>
+              <p id='name'></p>
+              <p id='email'>Email: person1@gmail.com</p>
+            </div>
+          </div>
+          <div class='template-content col-sm-8' style="display:none">
+            <div class='subcontent content-title'>
+              <h1>Person profile</h1>
+            </div>
+            <div class='edit-description float-right'>
+              <button type="button" id="edit-userProf-btn">Edit</button>
+            </div>
+            <div class='subcontent content-description'>
+              <h1><i class="fas fa-angle-down"></i>Description</h1>
+              <p class='text-justify'></p>
+            </div>
+            <div class='subcontent content-entries'>
+              <h1><i class="fas fa-angle-down"></i>Entries Created</h1>
+              <ul class='content-list'>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class='jumbotron text-center'>
+        <nav class='bottom-nav-bar'>
+          <ul class='footer-menu'>
+            <li><a href='#'>Terms of Use</a></li>
+            <li>|</li>
+            <li><a href='./about.html'>About</a></li>
+            <li>|</li>
+            <li><a href='#'>Contact</a></li>
+          </ul>
+        </nav>
+    </footer>
+  </body>
+  <script src="./vendor/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="./vendor/moment.min.js"></script>
+  <script src='./scripts/authentication.js'></script>
+  <script src='./scripts/extractData.js'></script>
+  <script src='./scripts/userProf.js'></script>
+</html>

@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  font: 100%;
+  font-family: sans-serif;
+  color: #5D6063;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.container{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  min-height: calc(100vh - 19.4rem);
+}
+
+.content-header h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.subcontent{
+  margin-bottom: 3rem;
+}
+
+.content-desc ol li, .content-desc ol p{
+  margin-bottom: 1.4rem;
+}
+
+.content-desc ol li{
+  font-weight: bold;
+}
+
+ol {
+    list-style: none; /* Remove default numbering */
+    /* font: 15px 'trebuchet MS', 'lucida sans'; */
+    padding: 0;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#terms-pic{
+    height: 30rem;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}

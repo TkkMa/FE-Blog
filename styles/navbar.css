@@ -1,0 +1,32 @@
+.navbar-nav > li{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.bottom-nav-bar a:link,
+.bottom-nav-bar a:visited {
+  color: #5D6063;
+  text-decoration: none;
+}
+
+.bottom-nav-bar a:hover{
+  color: white;
+}
+
+.footer-menu {
+  color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu > li{
+  display: inline;
+  padding: 0 1.4rem;
+}
+
+footer.jumbotron {
+  margin-bottom: 0;
+  min-height: 11.4rem;
+  background-color: #343a40;
+  border-radius: 0;
+}

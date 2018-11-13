@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>About me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href='styles/about.css' rel='stylesheet' />
+    <link href='styles/navbar.css' rel='stylesheet' />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class='container-fluid'>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+              <li class="nav-item" id='home'>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active" id='about'>
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <ul class='navbar-nav navbar-right'>
+              <li class="nav-item" id='login'>
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item" id='signup'>
+                <a class="nav-link" href="./signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class='container'>
+        <div class='row'>
+          <div class='sidebar col-sm-4'>
+            <div class='subcontent sidebar-picture'>
+              <img src='https://image.ibb.co/g5nuxo/Totoro_by_noodlecutie123_d3j76oj.png' />
+            </div>
+            <div class='sidebar-description'>
+                <p>Blog created: 10/05/2018</p>
+                <p>Name: Terence Ma</p>
+                <p>Email: me@gmail.com</p>
+                <p>Tel: xxxx xxxx</p>
+            </div>
+          </div>
+          <div class='content col-sm-8'>
+            <div class='content-title'>
+              <h1>About Me</h1>
+            </div>
+            <div class='subcontent content-description'>
+              <h1><i class="fas fa-angle-down"></i>Description</h1>
+              <p class='text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at eros eu neque fringilla pulvinar. Nulla ac pulvinar tortor. Donec mollis augue mi, sit amet volutpat risus porta at. Sed luctus eu dui a dapibus. Cras iaculis felis elit, ut laoreet ligula tempus ut. Phasellus bibendum erat sit amet tortor dictum molestie. Phasellus quis fermentum velit, ac ultrices nibh. Mauris rhoncus rhoncus semper. Nullam finibus odio eget ligula rhoncus tristique. Pellentesque ut risus quis est auctor bibendum. Quisque sit amet nulla varius, fringilla orci sed, ultrices massa. Nunc ac nisi quis ligula mattis pellentesque.
+
+                Aliquam vestibulum mattis augue. Quisque placerat aliquam sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam lobortis dolor magna, nec posuere libero scelerisque eget. Aliquam sed venenatis tortor. Curabitur accumsan non sapien in placerat. Nam quis efficitur justo.
+                Aliquam tristique maximus interdum. Fusce convallis sit amet nisl a lacinia. Duis tincidunt, eros vel fermentum ultrices, tortor ligula ullamcorper velit, id lacinia lacus justo eu sapien. Duis pharetra dui tellus, vitae consequat diam ullamcorper eu. Duis nisi mi, condimentum eget arcu vel, finibus egestas turpis. Vestibulum vitae tellus orci. Aenean nisl velit, vehicula vel commodo quis, gravida at ligula. Nulla justo felis, iaculis tincidunt scelerisque semper, sodales eu ipsum. Nullam blandit odio neque, nec consequat felis congue ut. Proin euismod enim vitae nisl pharetra, in faucibus velit egestas.</p>
+            </div>
+            <div class='subcontent content-WE'>
+              <h1><i class="fas fa-angle-down"></i>Work Experience</h1>
+              <ul class='content-list'>
+                <li>Application Support Analyst, GSMA</li>
+                <p class='text-justify'>Aliquam vestibulum mattis augue. Quisque placerat aliquam sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+                <li>Risk Consultant, ERM</li>
+                <p class='text-justify'>Conducted safety studies for onshore and offshore oil and gas production plants. In particular, performed probabilistic analyses for vapour gas explosions using commercial CFD software FLACS.</p>
+              </ul>
+            </div>
+            <div class='subcontent content-Ed'>
+              <h1><i class="fas fa-angle-down"></i>Education</h1>
+              <ul class='content-list'>
+                <li>PhD in combustion research, Imperial College London</li>
+                <p class='text-justify'>Thesis Title: Flame Surface Density modelling of the Large Eddy Simulation of Turbulent Premixed Flames.</p>
+                <li>Masters in Mechanical Engineering, Imperial College London</li>
+                <p class='text-justify'>Aliquam vestibulum mattis augue. Quisque placerat aliquam sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos</p>
+              </ul>
+            </div>
+            <div class='subcontent content-entries'>
+              <h1><i class="fas fa-angle-down"></i>Entries Created</h1>
+              <ul class='content-list' id='blog-entry-list'>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <footer class='jumbotron text-center'>
+          <nav class='bottom-nav-bar'>
+            <ul class='footer-menu'>
+              <li><a href='./terms.html'>Terms of Use</a></li>
+              <li>|</li>
+              <li><a href='./about.html'>About</a></li>
+              <li>|</li>
+              <li><a href='#'>Contact</a></li>
+            </ul>
+          </nav>
+      </footer>
+  </body>
+  <script src="./vendor/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="./vendor/moment.min.js"></script>
+  <script src="./scripts/extractData.js"></script>
+  <script src="./scripts/authentication.js"></script>
+  <script src='./scripts/about.js'></script>
+</html>

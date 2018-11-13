@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  font: 100%;
+  font-family: sans-serif;
+  color: #5D6063;
+  font-size: 1.6rem;
+  height: 100%;
+}
+
+.container{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  min-height: calc(100vh - 19.4rem);
+}
+
+.content {
+  margin-top: 4rem;
+  border: 1px solid #D6D9DC;
+  padding: 2rem 5rem 5rem 5rem;
+}
+
+.content-header h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content-header a:link{
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+img{
+  max-width: 80%;
+  border-radius: 2%;
+  display: block;
+  margin: 0 auto;
+}
+
+.content-tags button {
+  margin: 0 0.5rem;
+  border: .1rem solid transparent;
+  border-radius: .50rem;
+  padding: 0.5rem 0.75rem 1.8rem 0.75rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 1rem;
+  color: #5D6063;
+}
+
+.content-tags button:hover {
+  background-color: rgb(0,0,0, 0.3);
+}
+
+.subcontent{
+  margin-bottom: 3rem;
+}
+
+.content-footer-links > .content-footer-links-prevNext {
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.content-footer-links-prevNext a{
+  text-transform: uppercase;
+  margin: 0 1rem;
+  position:relative;
+  top:-0.4rem;
+  font-size: 1.8rem;
+  font-style:italic;
+}
+
+.content-header a:link,
+.content-header a:visited,
+.content-desc a:link,
+.content-desc a:visited,
+.content-footer-links-prevNext a:link,
+.content-footer-links-prevNext a:visited{
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.content-header a:hover,
+.content-desc a:hover,
+.content-footer-links-prevNext a:hover{
+  color: #5D6063;
+}
+
+/* .content-comments{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-comments p{
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.content-comments-item{
+  margin: 1.2rem 0;
+}
+.content-comments-item a{
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.content-comments-item span{
+  margin-left: 3rem;
+  font-style:italic;
+}
+.content-comments button{
+  padding: 0.75rem 1rem 2.3rem 0.75rem;
+  font-size: 1.5rem;
+}
+
+.content-comments button>i{
+  margin-right: 0.5rem;
+}*/

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Blog Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href='styles/post.css' rel='stylesheet' />
+    <link href='styles/navbar.css' rel='stylesheet' />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class='container-fluid'>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+              <li class="nav-item" id='home'>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id='about'>
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <ul class='navbar-nav navbar-right'>
+              <li class="nav-item" id='login'>
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item" id='signup'>
+                <a class="nav-link" href="./signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class='container'>
+        <div class='row attach-data'>
+          <div class='template-content col-sm-12' style='display:none'>
+            <div class='subcontent content-header'>
+              <h1>Title Template</h1>
+              <p>Date | <i class="fas fa-user"></i> <a href='./user.html'>person 1</a></p>
+              <!-- <p>Date | <i class="fas fa-user"></i> <a href='./user.html'>person 1</a> | <i class="fas fa-comments"></i> <a href='#'>Leave a comment</a></p> -->
+            </div>
+            <div class='subcontent content-image'>
+              <img src='./images/arno-smit-88929-unsplash.jpg' />
+            </div>
+            <div class='subcontent content-desc text-justify'>
+            </div>
+            <div class='subcontent content-tags'>
+              <p>Tags: <span></span></p>
+            </div>
+            <div class='subcontent content-footer-links'>
+              <ul class='content-footer-links-prevNext'>
+                <li><i class="fas fa-angle-left fa-2x"></i><a href='#'>Previous</a></li>
+                <li><a href='#'>Next</a><i class="fas fa-angle-right fa-2x"></i></li>
+              </ul>
+            </div>
+            <!-- <div class='content-comments'>
+              <p>Comments</p>
+              <form method='get' action='./addComment.html'>
+                <button><i class="fas fa-plus"></i>Comment</button>
+              </form>
+            </div>
+            <hr/>
+            <div class='content-comments-item'>
+              <p><a href='./user.html'>person 2</a><span>a few mins ago</span></p>
+              <p>Awesome post!</p>
+            </div>
+            <div class='content-comments-item'>
+              <p><a href='./user.html'>person 4</a><span>June 19th 2018</span></p>
+              <p>blah blah blah blah!</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class='jumbotron text-center'>
+        <nav class='bottom-nav-bar'>
+          <ul class='footer-menu'>
+            <li><a href='./terms.html'>Terms of Use</a></li>
+            <li>|</li>
+            <li><a href='./about.html'>About</a></li>
+            <li>|</li>
+            <li><a href='#'>Contact</a></li>
+          </ul>
+        </nav>
+    </footer>
+  </body>
+  <script src="./vendor/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="./vendor/moment.min.js"></script>
+  <script src="./scripts/extractData.js"></script>
+  <script src="./scripts/authentication.js"></script>
+  <script src="./scripts/post.js"></script>
+</html>

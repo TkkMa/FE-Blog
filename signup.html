@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href='styles/form.css' rel='stylesheet' />
+    <link href='styles/navbar.css' rel='stylesheet' />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div class='container-fluid'>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mt-lg-0">
+              <li class="nav-item" id='home'>
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id='about'>
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+            </ul>
+            <ul class='navbar-nav navbar-right'>
+              <li class="nav-item" id='login'>
+                <a class="nav-link" href="./login.html">Login</a>
+              </li>
+              <li class="nav-item" id='signup'>
+                <a class="nav-link" href="./signup.html">Sign Up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class='container'>
+        <div class='section-title'>
+          <h1>Welcome!</h1>
+          <h3>Fill out the form below to sign-up for a new account</h3>
+          <p>Username or email exists!</p>
+        </div>
+        <form id='register-form' method='post'>
+          <div class='form-row'>
+            <div class='form-group col-lg-6'>
+              <label for='firstName'>First Name</label>
+              <input id='firstName' class='form-control form-control-lg' name='firstName' type='text' placeholder='First Name'/>
+            </div>
+            <div class='form-group col-lg-6'>
+              <label for='lastName'>Last Name</label>
+              <input id='lastName' class='form-control form-control-lg' name='lastName' type='text' placeholder='Last Name'/>
+            </div>
+          </div>
+          <div class='form-row'>
+            <div class='form-group col-md-6'>
+              <label for='avatar'>Avatar</label>
+              <input id='avatar' class='form-control form-control-lg' name='avatar' type='text' placeholder='Avatar'/>
+            </div>
+            <div class='form-group col-md-6'>
+              <label for='email'>Email</label>
+              <input id='email' class='form-control form-control-lg' name='email' type='email' placeholder='Email' required/>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label for='userName'>Username</label>
+            <input id='userName' class='form-control form-control-lg' name='userName' type='text' placeholder='User Name' required/>
+          </div>
+          <div class='form-group'>
+            <label for='password'>Password</label>
+            <input id='password' class='form-control form-control-lg' name='password' type='password'
+            placeholder='Password' pattern = "^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?])[A-Za-z\d$@$!%*#?]{8,}$" required
+            title="Password must have 8 characters or more with at least one letter and one number" />
+          </div>
+          <!-- <div class='form-group'>
+            <label for='adminCode'>Admin Code</label>
+            <input id='adminCode' class='form-control form-control-lg' name='adminCode' type='password' placeholder='Admin Code'/>
+          </div> -->
+          <div class='row'>
+            <div class='col-sm-12'>
+              <button type='submit' class='btn btn-primary btn-lg float-right'>Submit</button>
+              <button type='reset' class='btn btn-danger btn-lg float-right'>Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class='jumbotron text-center'>
+        <nav class='bottom-nav-bar'>
+          <ul class='footer-menu'>
+            <li><a href='./terms.html'>Terms of Use</a></li>
+            <li>|</li>
+            <li><a href='./about.html'>About</a></li>
+            <li>|</li>
+            <li><a href='#'>Contact</a></li>
+          </ul>
+        </nav>
+    </footer>
+  </body>
+  <script src="./vendor/jquery-3.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script src="./vendor/jquery.validate-1.17.0.min.js"></script>
+  <script src="./vendor/additional-methods-1.17.0.min.js"></script>
+  <script src="./vendor/uuidv4.js"></script>
+  <script src="./scripts/extractData.js"></script>
+  <script src="./scripts/signup.js"></script>
+</html>
